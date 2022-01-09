@@ -1,5 +1,7 @@
+const packageJson = require('../../package.json');
+
+
 exports.test = async (request, res) => {
-    console.log("--------------------")
-    res.json({value:'working test'});
+    res.json({value:`${packageJson.name} working test`});
 };
   
